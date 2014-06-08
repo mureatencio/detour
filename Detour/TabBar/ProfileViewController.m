@@ -13,6 +13,8 @@
 @interface ProfileViewController ()
 @property (retain, nonatomic) IBOutlet UITableView *achievedTableView;
 @property (retain, nonatomic) IBOutlet UIScrollView *scrollChallenge;
+@property (retain, nonatomic) IBOutlet UILabel *pendingLabel;
+@property (retain, nonatomic) IBOutlet UILabel *achievedLabel;
 
 @end
 
@@ -54,14 +56,14 @@
     NSString *prefix = @"tour%i.png";
     for (int i = 0; i < 6; i++) {
         UIImageView *challenge = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:prefix, (i%4)+1]]];
-        challenge.frame = CGRectMake(i*70, 0, 60, 60);
+        challenge.frame = CGRectMake(i*103+18, 0, 93, 93);
         [self.scrollChallenge addSubview:challenge];
     }
     self.scrollChallenge.contentSize = CGSizeMake(6*70, self.scrollChallenge.bounds.size.height);
-    self.scrollChallenge.bounces = NO;
-    //UISwipeGestureRecognizer *deslizar = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeScrollView)];
-    //deslizar.direction = UISwipeGestureRecognizerDirectionDown | UISwipeGestureRecognizerDirectionUp;
-    //[self.scrollChallenge addGestureRecognizer:deslizar];
+    
+    //Custom fonts
+    self.pendingLabel.font = [UIFont fontWithName:@"BebasNeue" size:20];
+    self.achievedLabel.font = self.pendingLabel.font;
 }
 
 -(void) swipeRight:(UISwipeGestureRecognizer *) recognizer {
@@ -94,6 +96,8 @@
 - (void)dealloc {
     [_achievedTableView release];
     [_scrollChallenge release];
+    [_pendingLabel release];
+    [_achievedLabel release];
     [super dealloc];
 }
 
@@ -126,12 +130,12 @@
     
     // Here we use the provided setImageWithURL: method to load the web image
     // Ensure you use a placeholder image otherwise cells will be initialized with no image
-    UIFont *title = [ UIFont fontWithName: @"Arial" size: 13.0 ];
-    UIFont *detail = [ UIFont fontWithName: @"Arial" size: 9.0 ];
+    UIFont *title = [ UIFont fontWithName: @"Dinpro" size: 16.0 ];
+    UIFont *detail = [ UIFont fontWithName: @"Dinpro" size: 12.0 ];
     cell.textLabel.font  = title;
     cell.detailTextLabel.font  = detail;
     cell.textLabel.textColor = [UIColor whiteColor];
-    cell.detailTextLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.textColor = [UIColor colorWithRed:(155/255.0) green:(154/255.0) blue:(154/255.0) alpha:1];
     cell.backgroundColor = [UIColor clearColor];
     UIView *selectionColor = [[UIView alloc] init];
     selectionColor.backgroundColor = [UIColor colorWithRed:(45/255.0) green:(45/255.0) blue:(45/255.0) alpha:1];

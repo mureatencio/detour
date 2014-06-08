@@ -31,6 +31,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>BebasNeue.otf</string>
+		<string>DINPro-Regular.otf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

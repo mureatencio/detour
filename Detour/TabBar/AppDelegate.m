@@ -25,11 +25,19 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    UIColor *navColor = [UIColor colorWithRed:0.0 green:104/255.0 blue:165/255.0 alpha:1];
+    NSDictionary *navStyle = @{
+                              NSForegroundColorAttributeName: [UIColor whiteColor],
+                              NSFontAttributeName: [UIFont fontWithName:@"BebasNeue" size:33.0f]
+    };
     UIViewController *profileViewController = [[ProfileViewController alloc] initWithNibName:@"ProfileViewController" bundle:nil];
     UINavigationController *profileNavControler = [[UINavigationController alloc] initWithRootViewController:profileViewController];
+    [profileNavControler.navigationBar setBarTintColor: navColor];
     
+    profileNavControler.navigationBar.titleTextAttributes =  navStyle;
     UIViewController *mapViewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
     UINavigationController *toursNavController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
+    
 
     UIViewController *badgesViewController = [[BadgesViewController alloc] initWithNibName:@"BadgesViewController" bundle:nil];
     UINavigationController *badgesNavController = [[UINavigationController alloc] initWithRootViewController:badgesViewController];

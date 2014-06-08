@@ -23,7 +23,6 @@
 		7FA88DD919440DF5003AD950 /* ChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88DD719440DF5003AD950 /* ChallengeViewController.xib */; };
 		7FA88DDE1944106F003AD950 /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88DDC1944106F003AD950 /* SubmitViewController.m */; };
 		7FA88DDF1944106F003AD950 /* SubmitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88DDD1944106F003AD950 /* SubmitViewController.xib */; };
-		7FA88E2119447FB6003AD950 /* todo_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88E2019447FB6003AD950 /* todo_perfil.png */; };
 		7FA88E2819448280003AD950 /* AchievedCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88E2619448280003AD950 /* AchievedCellTableViewCell.m */; };
 		7FA88E2919448280003AD950 /* AchievedCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88E2719448280003AD950 /* AchievedCellTableViewCell.xib */; };
 		7FA88E2E19448ABA003AD950 /* OfertaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88E2B19448ABA003AD950 /* OfertaCell.m */; };
@@ -42,12 +41,15 @@
 		B59BF9631669EEF200D624C2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59BF9621669EEF200D624C2 /* Default@2x.png */; };
 		B59BF9651669EEF200D624C2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59BF9641669EEF200D624C2 /* Default-568h@2x.png */; };
 		B59BF9811669F06500D624C2 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B59BF97D1669F06500D624C2 /* first.png */; };
-		B59BF9821669F06500D624C2 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59BF97E1669F06500D624C2 /* first@2x.png */; };
 		B59BF9831669F06500D624C2 /* second@2x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B59BF97F1669F06500D624C2 /* second@2x 2.png */; };
 		B59BF9841669F06500D624C2 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59BF9801669F06500D624C2 /* second@2x.png */; };
 		B7A40F3D19444D0F006A13E0 /* cabro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7A40F3C19444D0F006A13E0 /* cabro.jpg */; };
 		B7A40F3F19445428006A13E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A40F3E19445428006A13E0 /* Images.xcassets */; };
 		B7A40F4219445F68006A13E0 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7A40F4119445F68006A13E0 /* BebasNeue.otf */; };
+		B7C2746D1944B14800884615 /* DINPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7C2746C1944B14800884615 /* DINPro-Regular.otf */; };
+		B7C2746F1944B44000884615 /* todo_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C2746E1944B44000884615 /* todo_perfil.png */; };
+		B7C274731944B50E00884615 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C274721944B50E00884615 /* first@2x.png */; };
+		B7C274751944B59200884615 /* third@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C274741944B59200884615 /* third@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +77,6 @@
 		7FA88DDB1944106F003AD950 /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
 		7FA88DDC1944106F003AD950 /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
 		7FA88DDD1944106F003AD950 /* SubmitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitViewController.xib; sourceTree = "<group>"; };
-		7FA88E2019447FB6003AD950 /* todo_perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todo_perfil.png; sourceTree = "<group>"; };
 		7FA88E2519448280003AD950 /* AchievedCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievedCellTableViewCell.h; sourceTree = "<group>"; };
 		7FA88E2619448280003AD950 /* AchievedCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievedCellTableViewCell.m; sourceTree = "<group>"; };
 		7FA88E2719448280003AD950 /* AchievedCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AchievedCellTableViewCell.xib; sourceTree = "<group>"; };
@@ -101,12 +102,15 @@
 		B59BF9621669EEF200D624C2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B59BF9641669EEF200D624C2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B59BF97D1669F06500D624C2 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		B59BF97E1669F06500D624C2 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		B59BF97F1669F06500D624C2 /* second@2x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x 2.png"; sourceTree = "<group>"; };
 		B59BF9801669F06500D624C2 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		B7A40F3C19444D0F006A13E0 /* cabro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabro.jpg; sourceTree = "<group>"; };
 		B7A40F3E19445428006A13E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B7A40F4119445F68006A13E0 /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
+		B7C2746C1944B14800884615 /* DINPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Regular.otf"; sourceTree = "<group>"; };
+		B7C2746E1944B44000884615 /* todo_perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todo_perfil.png; sourceTree = "<group>"; };
+		B7C274721944B50E00884615 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		B7C274741944B59200884615 /* third@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "third@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +174,8 @@
 		7FFA26B81943DBA400D95EDF /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				B7C2746E1944B44000884615 /* todo_perfil.png */,
 				7FA88E2219448140003AD950 /* cells */,
-				7FA88E2019447FB6003AD950 /* todo_perfil.png */,
 				7FA88DA71943E12E003AD950 /* ProfileViewController.h */,
 				7FA88DA81943E12E003AD950 /* ProfileViewController.m */,
 				7FA88DA91943E12E003AD950 /* ProfileViewController.xib */,
@@ -268,13 +272,14 @@
 				B7A40F4019445F1D006A13E0 /* Fonts */,
 				B7A40F3C19444D0F006A13E0 /* cabro.jpg */,
 				B59BF97D1669F06500D624C2 /* first.png */,
-				B59BF97E1669F06500D624C2 /* first@2x.png */,
 				B59BF97F1669F06500D624C2 /* second@2x 2.png */,
 				B59BF9801669F06500D624C2 /* second@2x.png */,
+				B7C274741944B59200884615 /* third@2x.png */,
 				B59BF9561669EEF200D624C2 /* BCExperience-Info.plist */,
 				B59BF9571669EEF200D624C2 /* InfoPlist.strings */,
 				B59BF95A1669EEF200D624C2 /* main.m */,
 				B59BF95C1669EEF200D624C2 /* BCExperience-Prefix.pch */,
+				B7C274721944B50E00884615 /* first@2x.png */,
 				B59BF9601669EEF200D624C2 /* Default.png */,
 				B59BF9621669EEF200D624C2 /* Default@2x.png */,
 				B59BF9641669EEF200D624C2 /* Default-568h@2x.png */,
@@ -285,6 +290,7 @@
 		B7A40F4019445F1D006A13E0 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				B7C2746C1944B14800884615 /* DINPro-Regular.otf */,
 				B7A40F4119445F68006A13E0 /* BebasNeue.otf */,
 			);
 			name = Fonts;
@@ -343,7 +349,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA88DB01943E1D4003AD950 /* ToursViewController.xib in Resources */,
-				7FA88E2119447FB6003AD950 /* todo_perfil.png in Resources */,
 				7FA88DCF1943F6A6003AD950 /* MapViewController.xib in Resources */,
 				7FA88DD419440189003AD950 /* TourInfoViewController.xib in Resources */,
 				B59BF9591669EEF200D624C2 /* InfoPlist.strings in Resources */,
@@ -358,14 +363,17 @@
 				7FA88E3319448D11003AD950 /* tour1.png in Resources */,
 				B59BF9631669EEF200D624C2 /* Default@2x.png in Resources */,
 				7FA88E2F19448ABA003AD950 /* ofertaView.xib in Resources */,
+				B7C274731944B50E00884615 /* first@2x.png in Resources */,
 				B7A40F4219445F68006A13E0 /* BebasNeue.otf in Resources */,
 				B7A40F3F19445428006A13E0 /* Images.xcassets in Resources */,
 				B59BF9651669EEF200D624C2 /* Default-568h@2x.png in Resources */,
+				B7C2746F1944B44000884615 /* todo_perfil.png in Resources */,
 				7FA88DAB1943E12E003AD950 /* ProfileViewController.xib in Resources */,
 				B59BF9811669F06500D624C2 /* first.png in Resources */,
+				B7C2746D1944B14800884615 /* DINPro-Regular.otf in Resources */,
 				7FA88DA51943DE95003AD950 /* LoginViewController.xib in Resources */,
+				B7C274751944B59200884615 /* third@2x.png in Resources */,
 				7FA88DDF1944106F003AD950 /* SubmitViewController.xib in Resources */,
-				B59BF9821669F06500D624C2 /* first@2x.png in Resources */,
 				B59BF9831669F06500D624C2 /* second@2x 2.png in Resources */,
 				B59BF9841669F06500D624C2 /* second@2x.png in Resources */,
 			);

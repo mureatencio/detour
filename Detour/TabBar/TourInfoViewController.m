@@ -45,9 +45,11 @@
     _labelTitle.text = _tourDetail.title;
     NSString *intString = [NSString stringWithFormat:@"%d", tourDetail.price];
     _labelPrice.text = intString;
+    _labelPrice.text = _tourDetail.tripDuration;
     _labelDuration.text = _tourDetail.tripDuration;
     _labelPlace.text = _tourDetail.city;
     _labelDescription.text = _tourDetail.description;
+    
     
     NSURL *url = [NSURL URLWithString:[_tourDetail.image stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     NSData *imageData = [NSData dataWithContentsOfURL:url];
@@ -206,4 +208,6 @@
     [self.navigationController pushViewController:challengeView animated:YES];
 }
 
+- (IBAction)challengeFriends:(id)sender {
+}
 @end

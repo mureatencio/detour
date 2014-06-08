@@ -34,5 +34,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *facebook;
 @property (strong, nonatomic) IBOutlet UIButton *twitter;
 @property (nonatomic, readwrite, assign) Tour *tourDetail;
+- (IBAction)challengeFriends:(id)sender;
 
 @end

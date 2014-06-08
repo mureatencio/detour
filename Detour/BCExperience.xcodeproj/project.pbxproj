@@ -66,6 +66,14 @@
 		7FA88EE41944CB8E003AD950 /* MKCustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88EE11944CB8E003AD950 /* MKCustomAnnotation.m */; };
 		7FA88EE51944CB8E003AD950 /* Tour.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88EE21944CB8E003AD950 /* Tour.m */; };
 		7FA88EE71944CF68003AD950 /* map_pinn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88EE61944CF68003AD950 /* map_pinn.png */; };
+		7FA88EEE1944D146003AD950 /* empty_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88EE81944D146003AD950 /* empty_pic.png */; };
+		7FA88EEF1944D146003AD950 /* photo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88EE91944D146003AD950 /* photo_icon.png */; };
+		7FA88EF01944D146003AD950 /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88EEB1944D146003AD950 /* UploadViewController.m */; };
+		7FA88EF11944D146003AD950 /* UploadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88EEC1944D146003AD950 /* UploadViewController.xib */; };
+		7FA88EF21944D146003AD950 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88EED1944D146003AD950 /* video.png */; };
+		7FA88EF41944D71C003AD950 /* achievement_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88EF31944D71C003AD950 /* achievement_guide.png */; };
+		7FA88EF61944D72D003AD950 /* challenge-friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88EF51944D72D003AD950 /* challenge-friends.png */; };
+		7FA88EF81944D8AC003AD950 /* products.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88EF71944D8AC003AD950 /* products.png */; };
 		B59BF94F1669EEF200D624C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59BF94E1669EEF200D624C2 /* UIKit.framework */; };
 		B59BF9511669EEF200D624C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59BF9501669EEF200D624C2 /* Foundation.framework */; };
 		B59BF9531669EEF200D624C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59BF9521669EEF200D624C2 /* CoreGraphics.framework */; };
@@ -175,6 +183,15 @@
 		7FA88EE11944CB8E003AD950 /* MKCustomAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MKCustomAnnotation.m; path = TabBar/MKCustomAnnotation.m; sourceTree = "<group>"; };
 		7FA88EE21944CB8E003AD950 /* Tour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Tour.m; path = TabBar/Tour.m; sourceTree = "<group>"; };
 		7FA88EE61944CF68003AD950 /* map_pinn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pinn.png; sourceTree = "<group>"; };
+		7FA88EE81944D146003AD950 /* empty_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_pic.png; sourceTree = "<group>"; };
+		7FA88EE91944D146003AD950 /* photo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo_icon.png; sourceTree = "<group>"; };
+		7FA88EEA1944D146003AD950 /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		7FA88EEB1944D146003AD950 /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
+		7FA88EEC1944D146003AD950 /* UploadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadViewController.xib; sourceTree = "<group>"; };
+		7FA88EED1944D146003AD950 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
+		7FA88EF31944D71C003AD950 /* achievement_guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achievement_guide.png; sourceTree = "<group>"; };
+		7FA88EF51944D72D003AD950 /* challenge-friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "challenge-friends.png"; sourceTree = "<group>"; };
+		7FA88EF71944D8AC003AD950 /* products.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = products.png; sourceTree = "<group>"; };
 		B59BF94A1669EEF200D624C2 /* BCExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59BF94E1669EEF200D624C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B59BF9501669EEF200D624C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -244,8 +261,11 @@
 		7FA88DDA19440DFE003AD950 /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				7FA88EF71944D8AC003AD950 /* products.png */,
 				7FA88DD519440DF5003AD950 /* ChallengeViewController.h */,
 				7FA88DD619440DF5003AD950 /* ChallengeViewController.m */,
+				7FA88EF51944D72D003AD950 /* challenge-friends.png */,
+				7FA88EF31944D71C003AD950 /* achievement_guide.png */,
 				7FA88DD719440DF5003AD950 /* ChallengeViewController.xib */,
 			);
 			name = Challenge;
@@ -254,6 +274,12 @@
 		7FA88DE019441077003AD950 /* Submit photo */ = {
 			isa = PBXGroup;
 			children = (
+				7FA88EE81944D146003AD950 /* empty_pic.png */,
+				7FA88EE91944D146003AD950 /* photo_icon.png */,
+				7FA88EEA1944D146003AD950 /* UploadViewController.h */,
+				7FA88EEB1944D146003AD950 /* UploadViewController.m */,
+				7FA88EEC1944D146003AD950 /* UploadViewController.xib */,
+				7FA88EED1944D146003AD950 /* video.png */,
 				7FA88DDB1944106F003AD950 /* SubmitViewController.h */,
 				7FA88DDC1944106F003AD950 /* SubmitViewController.m */,
 				7FA88DDD1944106F003AD950 /* SubmitViewController.xib */,
@@ -513,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA88DB01943E1D4003AD950 /* ToursViewController.xib in Resources */,
+				7FA88EF11944D146003AD950 /* UploadViewController.xib in Resources */,
 				7FA88DCF1943F6A6003AD950 /* MapViewController.xib in Resources */,
 				7FA88DD419440189003AD950 /* TourInfoViewController.xib in Resources */,
 				B7C2747B1944C13E00884615 /* challenge3.png in Resources */,
@@ -522,6 +549,7 @@
 				7FA88E3519448D11003AD950 /* tour3.png in Resources */,
 				7FA88E3719449473003AD950 /* tour4.png in Resources */,
 				7FA88E9F1944C801003AD950 /* share_facebbok.png in Resources */,
+				7FA88EF41944D71C003AD950 /* achievement_guide.png in Resources */,
 				7FA88EA01944C801003AD950 /* share_twitter.png in Resources */,
 				7FA88DD919440DF5003AD950 /* ChallengeViewController.xib in Resources */,
 				B7C274791944C13E00884615 /* challenge1.png in Resources */,
@@ -533,6 +561,7 @@
 				7FA88E991944C801003AD950 /* back_scroll.png in Resources */,
 				7FA88E9E1944C801003AD950 /* pic_bot_bar.png in Resources */,
 				B59BF9611669EEF200D624C2 /* Default.png in Resources */,
+				7FA88EEE1944D146003AD950 /* empty_pic.png in Resources */,
 				7FA88E3319448D11003AD950 /* tour1.png in Resources */,
 				7FA88E9A1944C801003AD950 /* book_button.png in Resources */,
 				B59BF9631669EEF200D624C2 /* Default@2x.png in Resources */,
@@ -543,17 +572,21 @@
 				7FA88ECE1944C92E003AD950 /* Archive.zip in Resources */,
 				B59BF9651669EEF200D624C2 /* Default-568h@2x.png in Resources */,
 				B7C2746F1944B44000884615 /* todo_perfil.png in Resources */,
+				7FA88EF21944D146003AD950 /* video.png in Resources */,
+				7FA88EF61944D72D003AD950 /* challenge-friends.png in Resources */,
 				7FA88DAB1943E12E003AD950 /* ProfileViewController.xib in Resources */,
 				B59BF9811669F06500D624C2 /* first.png in Resources */,
 				B7C2747D1944C1FC00884615 /* challenge4.png in Resources */,
 				B7C2746D1944B14800884615 /* DINPro-Regular.otf in Resources */,
 				7FA88DA51943DE95003AD950 /* LoginViewController.xib in Resources */,
+				7FA88EF81944D8AC003AD950 /* products.png in Resources */,
 				7FA88E9B1944C801003AD950 /* challenge.png in Resources */,
 				B7C274751944B59200884615 /* third@2x.png in Resources */,
 				7FA88DDF1944106F003AD950 /* SubmitViewController.xib in Resources */,
 				B59BF9831669F06500D624C2 /* second@2x 2.png in Resources */,
 				B7C2747A1944C13E00884615 /* challenge2.png in Resources */,
 				B59BF9841669F06500D624C2 /* second@2x.png in Resources */,
+				7FA88EEF1944D146003AD950 /* photo_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +605,7 @@
 				7FA88E2819448280003AD950 /* AchievedCellTableViewCell.m in Sources */,
 				7FA88ECD1944C92E003AD950 /* AFURLSessionManager.m in Sources */,
 				7FA88DD319440189003AD950 /* TourInfoViewController.m in Sources */,
+				7FA88EF01944D146003AD950 /* UploadViewController.m in Sources */,
 				7FA88ECA1944C92E003AD950 /* AFURLConnectionOperation.m in Sources */,
 				7FA88EC61944C92E003AD950 /* AFHTTPRequestOperationManager.m in Sources */,
 				7FA88DAF1943E1D4003AD950 /* ToursViewController.m in Sources */,

@@ -18,7 +18,7 @@
         NSMutableArray *products;
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil b sundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {

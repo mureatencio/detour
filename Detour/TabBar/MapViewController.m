@@ -111,7 +111,7 @@
             annotationView.annotation = annotation;
             myLocation.tag = myLocation.tag;
         }
-        annotationView.image = [UIImage imageNamed:@"mapa_dot.png"];
+        annotationView.image = [UIImage imageNamed:@"pin.png"];
 
         //UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         //[rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
@@ -123,7 +123,7 @@
         annotationView.rightCalloutAccessoryView = infoButton;
         
         
-        UIImageView *myCustomImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pin.png"]];
+        UIImageView *myCustomImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mapa_dot.png"]];
         annotationView.leftCalloutAccessoryView = myCustomImage;
         
         

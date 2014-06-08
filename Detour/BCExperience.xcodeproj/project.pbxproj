@@ -36,6 +36,9 @@
 		B59BF9821669F06500D624C2 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59BF97E1669F06500D624C2 /* first@2x.png */; };
 		B59BF9831669F06500D624C2 /* second@2x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B59BF97F1669F06500D624C2 /* second@2x 2.png */; };
 		B59BF9841669F06500D624C2 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B59BF9801669F06500D624C2 /* second@2x.png */; };
+		B7A40F3D19444D0F006A13E0 /* cabro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7A40F3C19444D0F006A13E0 /* cabro.jpg */; };
+		B7A40F3F19445428006A13E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A40F3E19445428006A13E0 /* Images.xcassets */; };
+		B7A40F4219445F68006A13E0 /* BebasNeue.otf in Resources */ = {isa = PBXBuildFile; fileRef = B7A40F4119445F68006A13E0 /* BebasNeue.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		B59BF97E1669F06500D624C2 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		B59BF97F1669F06500D624C2 /* second@2x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x 2.png"; sourceTree = "<group>"; };
 		B59BF9801669F06500D624C2 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		B7A40F3C19444D0F006A13E0 /* cabro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabro.jpg; sourceTree = "<group>"; };
+		B7A40F3E19445428006A13E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B7A40F4119445F68006A13E0 /* BebasNeue.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BebasNeue.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +215,7 @@
 				B59BF95E1669EEF200D624C2 /* AppDelegate.m */,
 				7FFA26B91943DBAC00D95EDF /* Controllers */,
 				B59BF9551669EEF200D624C2 /* Supporting Files */,
+				B7A40F3E19445428006A13E0 /* Images.xcassets */,
 			);
 			name = BCExperience;
 			path = TabBar;
@@ -217,6 +224,8 @@
 		B59BF9551669EEF200D624C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B7A40F4019445F1D006A13E0 /* Fonts */,
+				B7A40F3C19444D0F006A13E0 /* cabro.jpg */,
 				B59BF97D1669F06500D624C2 /* first.png */,
 				B59BF97E1669F06500D624C2 /* first@2x.png */,
 				B59BF97F1669F06500D624C2 /* second@2x 2.png */,
@@ -230,6 +239,14 @@
 				B59BF9641669EEF200D624C2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7A40F4019445F1D006A13E0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B7A40F4119445F68006A13E0 /* BebasNeue.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,8 +307,11 @@
 				B59BF9591669EEF200D624C2 /* InfoPlist.strings in Resources */,
 				7FA88DD919440DF5003AD950 /* ChallengeViewController.xib in Resources */,
 				7FA88DB51943E1FC003AD950 /* BadgesViewController.xib in Resources */,
+				B7A40F3D19444D0F006A13E0 /* cabro.jpg in Resources */,
 				B59BF9611669EEF200D624C2 /* Default.png in Resources */,
 				B59BF9631669EEF200D624C2 /* Default@2x.png in Resources */,
+				B7A40F4219445F68006A13E0 /* BebasNeue.otf in Resources */,
+				B7A40F3F19445428006A13E0 /* Images.xcassets in Resources */,
 				B59BF9651669EEF200D624C2 /* Default-568h@2x.png in Resources */,
 				7FA88DAB1943E12E003AD950 /* ProfileViewController.xib in Resources */,
 				B59BF9811669F06500D624C2 /* first.png in Resources */,

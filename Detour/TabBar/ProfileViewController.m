@@ -8,8 +8,10 @@
 
 #import "ProfileViewController.h"
 #import "SubmitViewController.h"
+#import "AchievedCellTableViewCell.h"
 
 @interface ProfileViewController ()
+@property (retain, nonatomic) IBOutlet UITableView *achievedTableView;
 
 @end
 
@@ -25,10 +27,8 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (void)settingSwipe
 {
-    [super viewDidLoad];
-    
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeft:)];
     swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
     [self.view addGestureRecognizer:swipeLeft];
@@ -40,6 +40,16 @@
     [self.view addGestureRecognizer:swipeRight];
     swipeRight.delegate = self;
     [swipeRight release];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.achievedTableView.delegate = self;
+    [self.achievedTableView registerNib:[UINib nibWithNibName:@"AchievedCellTableViewCelL" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"achievedCell"];
+
+    
+    [self settingSwipe];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -69,4 +79,86 @@
     [self.navigationController pushViewController:challengeView animated:YES];
 }
 
+- (void)dealloc {
+    [_achievedTableView release];
+    [super dealloc];
+}
+
+#pragma mark table view methods
+
+#pragma mark table view delegate methods
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;    //count of section
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 4;    //count number of row from counting array hear cataGorry is An Array
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *MyIdentifier = @"MyIdentifier";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                      reuseIdentifier:MyIdentifier];
+    }
+    
+    // Here we use the provided setImageWithURL: method to load the web image
+    // Ensure you use a placeholder image otherwise cells will be initialized with no image
+    UIFont *title = [ UIFont fontWithName: @"Arial" size: 13.0 ];
+    UIFont *detail = [ UIFont fontWithName: @"Arial" size: 9.0 ];
+    cell.textLabel.font  = title;
+    cell.detailTextLabel.font  = detail;
+    cell.textLabel.textColor = [UIColor whiteColor];
+    cell.detailTextLabel.textColor = [UIColor whiteColor];
+    cell.backgroundColor = [UIColor clearColor];
+    UIView *selectionColor = [[UIView alloc] init];
+    selectionColor.backgroundColor = [UIColor colorWithRed:(45/255.0) green:(45/255.0) blue:(45/255.0) alpha:1];
+    cell.selectedBackgroundView = selectionColor;
+    tableView.backgroundColor = [UIColor clearColor];
+    switch (indexPath.row) {
+        case 0:
+            [cell.imageView setImage:[UIImage imageNamed:@"tour1.png"]];
+            cell.textLabel.text = @"Whitewater Kayaking School";
+            cell.detailTextLabel.text = @"with Andy Thunell near Green River, UT";
+            break;
+        case 1:
+            [cell.imageView setImage:[UIImage imageNamed:@"tour2.png"]];
+            cell.textLabel.text = @"Rafting";
+            cell.detailTextLabel.text = @"with Will Sands near Boulder, CO";
+            
+            break;
+        case 2:
+            [cell.imageView setImage:[UIImage imageNamed:@"tour3.png"]];
+            cell.textLabel.text = @"Cycling";
+            cell.detailTextLabel.text = @"with Andy Hansen near Boulder, CO";
+            break;
+        case 3:
+            [cell.imageView setImage:[UIImage imageNamed:@"tour4.png"]];
+            cell.textLabel.text = @"Hiking";
+            cell.detailTextLabel.text = @"with Dave Harris near Boulder, CO";
+            break;
+            
+        default:
+            break;
+    }
+    [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+    return cell;
+}
+
+//eliminar celdas sobrantes
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    UIView *view = [[UIView alloc] init];
+    
+    return view;
+}
 @end

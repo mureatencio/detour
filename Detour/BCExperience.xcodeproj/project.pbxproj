@@ -23,6 +23,15 @@
 		7FA88DD919440DF5003AD950 /* ChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88DD719440DF5003AD950 /* ChallengeViewController.xib */; };
 		7FA88DDE1944106F003AD950 /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88DDC1944106F003AD950 /* SubmitViewController.m */; };
 		7FA88DDF1944106F003AD950 /* SubmitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88DDD1944106F003AD950 /* SubmitViewController.xib */; };
+		7FA88E2119447FB6003AD950 /* todo_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88E2019447FB6003AD950 /* todo_perfil.png */; };
+		7FA88E2819448280003AD950 /* AchievedCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88E2619448280003AD950 /* AchievedCellTableViewCell.m */; };
+		7FA88E2919448280003AD950 /* AchievedCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88E2719448280003AD950 /* AchievedCellTableViewCell.xib */; };
+		7FA88E2E19448ABA003AD950 /* OfertaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88E2B19448ABA003AD950 /* OfertaCell.m */; };
+		7FA88E2F19448ABA003AD950 /* ofertaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88E2D19448ABA003AD950 /* ofertaView.xib */; };
+		7FA88E3319448D11003AD950 /* tour1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88E3019448D11003AD950 /* tour1.png */; };
+		7FA88E3419448D11003AD950 /* tour2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88E3119448D11003AD950 /* tour2.png */; };
+		7FA88E3519448D11003AD950 /* tour3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88E3219448D11003AD950 /* tour3.png */; };
+		7FA88E3719449473003AD950 /* tour4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88E3619449473003AD950 /* tour4.png */; };
 		B59BF94F1669EEF200D624C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59BF94E1669EEF200D624C2 /* UIKit.framework */; };
 		B59BF9511669EEF200D624C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59BF9501669EEF200D624C2 /* Foundation.framework */; };
 		B59BF9531669EEF200D624C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59BF9521669EEF200D624C2 /* CoreGraphics.framework */; };
@@ -66,6 +75,18 @@
 		7FA88DDB1944106F003AD950 /* SubmitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitViewController.h; sourceTree = "<group>"; };
 		7FA88DDC1944106F003AD950 /* SubmitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitViewController.m; sourceTree = "<group>"; };
 		7FA88DDD1944106F003AD950 /* SubmitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubmitViewController.xib; sourceTree = "<group>"; };
+		7FA88E2019447FB6003AD950 /* todo_perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todo_perfil.png; sourceTree = "<group>"; };
+		7FA88E2519448280003AD950 /* AchievedCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievedCellTableViewCell.h; sourceTree = "<group>"; };
+		7FA88E2619448280003AD950 /* AchievedCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievedCellTableViewCell.m; sourceTree = "<group>"; };
+		7FA88E2719448280003AD950 /* AchievedCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AchievedCellTableViewCell.xib; sourceTree = "<group>"; };
+		7FA88E2A19448ABA003AD950 /* OfertaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfertaCell.h; sourceTree = "<group>"; };
+		7FA88E2B19448ABA003AD950 /* OfertaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfertaCell.m; sourceTree = "<group>"; };
+		7FA88E2C19448ABA003AD950 /* OfertaCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfertaCellDelegate.h; sourceTree = "<group>"; };
+		7FA88E2D19448ABA003AD950 /* ofertaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ofertaView.xib; sourceTree = "<group>"; };
+		7FA88E3019448D11003AD950 /* tour1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tour1.png; sourceTree = "<group>"; };
+		7FA88E3119448D11003AD950 /* tour2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tour2.png; sourceTree = "<group>"; };
+		7FA88E3219448D11003AD950 /* tour3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tour3.png; sourceTree = "<group>"; };
+		7FA88E3619449473003AD950 /* tour4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tour4.png; sourceTree = "<group>"; };
 		B59BF94A1669EEF200D624C2 /* BCExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59BF94E1669EEF200D624C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B59BF9501669EEF200D624C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -132,9 +153,25 @@
 			name = "Submit photo";
 			sourceTree = "<group>";
 		};
+		7FA88E2219448140003AD950 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				7FA88E2A19448ABA003AD950 /* OfertaCell.h */,
+				7FA88E2B19448ABA003AD950 /* OfertaCell.m */,
+				7FA88E2C19448ABA003AD950 /* OfertaCellDelegate.h */,
+				7FA88E2D19448ABA003AD950 /* ofertaView.xib */,
+				7FA88E2519448280003AD950 /* AchievedCellTableViewCell.h */,
+				7FA88E2619448280003AD950 /* AchievedCellTableViewCell.m */,
+				7FA88E2719448280003AD950 /* AchievedCellTableViewCell.xib */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
 		7FFA26B81943DBA400D95EDF /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				7FA88E2219448140003AD950 /* cells */,
+				7FA88E2019447FB6003AD950 /* todo_perfil.png */,
 				7FA88DA71943E12E003AD950 /* ProfileViewController.h */,
 				7FA88DA81943E12E003AD950 /* ProfileViewController.m */,
 				7FA88DA91943E12E003AD950 /* ProfileViewController.xib */,
@@ -224,6 +261,10 @@
 		B59BF9551669EEF200D624C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7FA88E3619449473003AD950 /* tour4.png */,
+				7FA88E3019448D11003AD950 /* tour1.png */,
+				7FA88E3119448D11003AD950 /* tour2.png */,
+				7FA88E3219448D11003AD950 /* tour3.png */,
 				B7A40F4019445F1D006A13E0 /* Fonts */,
 				B7A40F3C19444D0F006A13E0 /* cabro.jpg */,
 				B59BF97D1669F06500D624C2 /* first.png */,
@@ -302,14 +343,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA88DB01943E1D4003AD950 /* ToursViewController.xib in Resources */,
+				7FA88E2119447FB6003AD950 /* todo_perfil.png in Resources */,
 				7FA88DCF1943F6A6003AD950 /* MapViewController.xib in Resources */,
 				7FA88DD419440189003AD950 /* TourInfoViewController.xib in Resources */,
 				B59BF9591669EEF200D624C2 /* InfoPlist.strings in Resources */,
+				7FA88E3519448D11003AD950 /* tour3.png in Resources */,
+				7FA88E3719449473003AD950 /* tour4.png in Resources */,
 				7FA88DD919440DF5003AD950 /* ChallengeViewController.xib in Resources */,
 				7FA88DB51943E1FC003AD950 /* BadgesViewController.xib in Resources */,
 				B7A40F3D19444D0F006A13E0 /* cabro.jpg in Resources */,
+				7FA88E2919448280003AD950 /* AchievedCellTableViewCell.xib in Resources */,
+				7FA88E3419448D11003AD950 /* tour2.png in Resources */,
 				B59BF9611669EEF200D624C2 /* Default.png in Resources */,
+				7FA88E3319448D11003AD950 /* tour1.png in Resources */,
 				B59BF9631669EEF200D624C2 /* Default@2x.png in Resources */,
+				7FA88E2F19448ABA003AD950 /* ofertaView.xib in Resources */,
 				B7A40F4219445F68006A13E0 /* BebasNeue.otf in Resources */,
 				B7A40F3F19445428006A13E0 /* Images.xcassets in Resources */,
 				B59BF9651669EEF200D624C2 /* Default-568h@2x.png in Resources */,
@@ -331,8 +379,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA88DDE1944106F003AD950 /* SubmitViewController.m in Sources */,
+				7FA88E2819448280003AD950 /* AchievedCellTableViewCell.m in Sources */,
 				7FA88DD319440189003AD950 /* TourInfoViewController.m in Sources */,
 				7FA88DAF1943E1D4003AD950 /* ToursViewController.m in Sources */,
+				7FA88E2E19448ABA003AD950 /* OfertaCell.m in Sources */,
 				B59BF95B1669EEF200D624C2 /* main.m in Sources */,
 				7FA88DD819440DF5003AD950 /* ChallengeViewController.m in Sources */,
 				7FA88DB41943E1FC003AD950 /* BadgesViewController.m in Sources */,

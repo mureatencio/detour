@@ -12,6 +12,7 @@
 
 @interface ProfileViewController ()
 @property (retain, nonatomic) IBOutlet UITableView *achievedTableView;
+@property (retain, nonatomic) IBOutlet UIScrollView *scrollChallenge;
 
 @end
 
@@ -50,7 +51,17 @@
 
     
     [self settingSwipe];
-    // Do any additional setup after loading the view from its nib.
+    NSString *prefix = @"tour%i.png";
+    for (int i = 0; i < 6; i++) {
+        UIImageView *challenge = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:prefix, (i%4)+1]]];
+        challenge.frame = CGRectMake(i*70, 0, 60, 60);
+        [self.scrollChallenge addSubview:challenge];
+    }
+    self.scrollChallenge.contentSize = CGSizeMake(6*70, self.scrollChallenge.bounds.size.height);
+    self.scrollChallenge.bounces = NO;
+    //UISwipeGestureRecognizer *deslizar = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeScrollView)];
+    //deslizar.direction = UISwipeGestureRecognizerDirectionDown | UISwipeGestureRecognizerDirectionUp;
+    //[self.scrollChallenge addGestureRecognizer:deslizar];
 }
 
 -(void) swipeRight:(UISwipeGestureRecognizer *) recognizer {
@@ -67,7 +78,8 @@
     }
 }
 
-
+- (void) swipeScrollView {
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -81,6 +93,7 @@
 
 - (void)dealloc {
     [_achievedTableView release];
+    [_scrollChallenge release];
     [super dealloc];
 }
 

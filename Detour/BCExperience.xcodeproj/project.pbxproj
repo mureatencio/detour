@@ -50,6 +50,10 @@
 		B7C2746F1944B44000884615 /* todo_perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C2746E1944B44000884615 /* todo_perfil.png */; };
 		B7C274731944B50E00884615 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C274721944B50E00884615 /* first@2x.png */; };
 		B7C274751944B59200884615 /* third@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C274741944B59200884615 /* third@2x.png */; };
+		B7C274791944C13E00884615 /* challenge1.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C274761944C13E00884615 /* challenge1.png */; };
+		B7C2747A1944C13E00884615 /* challenge2.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C274771944C13E00884615 /* challenge2.png */; };
+		B7C2747B1944C13E00884615 /* challenge3.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C274781944C13E00884615 /* challenge3.png */; };
+		B7C2747D1944C1FC00884615 /* challenge4.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C2747C1944C1FC00884615 /* challenge4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +115,10 @@
 		B7C2746E1944B44000884615 /* todo_perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todo_perfil.png; sourceTree = "<group>"; };
 		B7C274721944B50E00884615 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		B7C274741944B59200884615 /* third@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "third@2x.png"; sourceTree = "<group>"; };
+		B7C274761944C13E00884615 /* challenge1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = challenge1.png; sourceTree = "<group>"; };
+		B7C274771944C13E00884615 /* challenge2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = challenge2.png; sourceTree = "<group>"; };
+		B7C274781944C13E00884615 /* challenge3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = challenge3.png; sourceTree = "<group>"; };
+		B7C2747C1944C1FC00884615 /* challenge4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = challenge4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +273,10 @@
 		B59BF9551669EEF200D624C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B7C274761944C13E00884615 /* challenge1.png */,
+				B7C274771944C13E00884615 /* challenge2.png */,
+				B7C274781944C13E00884615 /* challenge3.png */,
+				B7C2747C1944C1FC00884615 /* challenge4.png */,
 				7FA88E3619449473003AD950 /* tour4.png */,
 				7FA88E3019448D11003AD950 /* tour1.png */,
 				7FA88E3119448D11003AD950 /* tour2.png */,
@@ -351,10 +363,12 @@
 				7FA88DB01943E1D4003AD950 /* ToursViewController.xib in Resources */,
 				7FA88DCF1943F6A6003AD950 /* MapViewController.xib in Resources */,
 				7FA88DD419440189003AD950 /* TourInfoViewController.xib in Resources */,
+				B7C2747B1944C13E00884615 /* challenge3.png in Resources */,
 				B59BF9591669EEF200D624C2 /* InfoPlist.strings in Resources */,
 				7FA88E3519448D11003AD950 /* tour3.png in Resources */,
 				7FA88E3719449473003AD950 /* tour4.png in Resources */,
 				7FA88DD919440DF5003AD950 /* ChallengeViewController.xib in Resources */,
+				B7C274791944C13E00884615 /* challenge1.png in Resources */,
 				7FA88DB51943E1FC003AD950 /* BadgesViewController.xib in Resources */,
 				B7A40F3D19444D0F006A13E0 /* cabro.jpg in Resources */,
 				7FA88E2919448280003AD950 /* AchievedCellTableViewCell.xib in Resources */,
@@ -370,11 +384,13 @@
 				B7C2746F1944B44000884615 /* todo_perfil.png in Resources */,
 				7FA88DAB1943E12E003AD950 /* ProfileViewController.xib in Resources */,
 				B59BF9811669F06500D624C2 /* first.png in Resources */,
+				B7C2747D1944C1FC00884615 /* challenge4.png in Resources */,
 				B7C2746D1944B14800884615 /* DINPro-Regular.otf in Resources */,
 				7FA88DA51943DE95003AD950 /* LoginViewController.xib in Resources */,
 				B7C274751944B59200884615 /* third@2x.png in Resources */,
 				7FA88DDF1944106F003AD950 /* SubmitViewController.xib in Resources */,
 				B59BF9831669F06500D624C2 /* second@2x 2.png in Resources */,
+				B7C2747A1944C13E00884615 /* challenge2.png in Resources */,
 				B59BF9841669F06500D624C2 /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

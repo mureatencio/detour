@@ -53,13 +53,13 @@
 
     
     [self settingSwipe];
-    NSString *prefix = @"tour%i.png";
-    for (int i = 0; i < 6; i++) {
-        UIImageView *challenge = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:prefix, (i%4)+1]]];
+    NSString *prefix = @"challenge%i.png";
+    for (int i = 0; i < 4; i++) {
+        UIImageView *challenge = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:prefix, i+1]]];
         challenge.frame = CGRectMake(i*103+18, 0, 93, 93);
         [self.scrollChallenge addSubview:challenge];
     }
-    self.scrollChallenge.contentSize = CGSizeMake(6*70, self.scrollChallenge.bounds.size.height);
+    self.scrollChallenge.contentSize = CGSizeMake(4*103+18, self.scrollChallenge.bounds.size.height);
     
     //Custom fonts
     self.pendingLabel.font = [UIFont fontWithName:@"BebasNeue" size:20];

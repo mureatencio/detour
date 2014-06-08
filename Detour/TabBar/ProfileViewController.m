@@ -8,6 +8,7 @@
 
 #import "ProfileViewController.h"
 #import "SubmitViewController.h"
+#import "UploadViewController.h"
 #import "AchievedCellTableViewCell.h"
 
 @interface ProfileViewController ()
@@ -57,14 +58,24 @@
     for (int i = 0; i < 4; i++) {
         UIImageView *challenge = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:prefix, i+1]]];
         challenge.frame = CGRectMake(i*103+18, 0, 93, 93);
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchedImage:)];
+        [challenge addGestureRecognizer:tap];
         [self.scrollChallenge addSubview:challenge];
-//        UITapGestureRecognizer *tap = UITap
+        
     }
     self.scrollChallenge.contentSize = CGSizeMake(4*103+18, self.scrollChallenge.bounds.size.height);
     
     //Custom fonts
     self.pendingLabel.font = [UIFont fontWithName:@"BebasNeue" size:20];
     self.achievedLabel.font = self.pendingLabel.font;
+}
+
+- (void)touchedImage:(UITapGestureRecognizer *)gesture {
+    // When the gesture has ended, perform your action.
+    if (gesture.state == UIGestureRecognizerStateEnded) {
+        UIViewController *challengeView= [[UploadViewController alloc] initWithNibName:@"UploadViewController" bundle:nil];
+        [self.navigationController pushViewController:challengeView animated:YES];
+    }
 }
 
 -(void) swipeRight:(UISwipeGestureRecognizer *) recognizer {
@@ -90,7 +101,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)SubmitExperience:(id)sender {
-    UIViewController *challengeView= [[SubmitViewController alloc] initWithNibName:@"SubmitViewController" bundle:nil];
+    UIViewController *challengeView= [[UploadViewController alloc] initWithNibName:@"UploadViewController" bundle:nil];
     [self.navigationController pushViewController:challengeView animated:YES];
 }
 

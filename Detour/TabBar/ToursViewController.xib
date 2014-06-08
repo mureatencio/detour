@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToursViewController">
             <connections>
-                <outlet property="scroll" destination="9XE-82-EKD" id="sjK-zG-qcs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,13 +25,16 @@
                         <action selector="viewTourInfo:" destination="-1" eventType="touchUpInside" id="hpp-Yt-1yl"/>
                     </connections>
                 </button>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9XE-82-EKD">
-                    <rect key="frame" x="40" y="297" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" red="0.16862745579999999" green="0.1647058874" blue="0.16078431900000001" alpha="1" colorSpace="deviceRGB"/>
-                </scrollView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="tbA-aH-VDq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="OYT-bt-TNL"/>
+                        <outlet property="delegate" destination="-1" id="C3A-2w-U8d"/>
+                    </connections>
+                </tableView>
             </subviews>
-            <color key="backgroundColor" red="0.1275858936" green="0.39126275510000003" blue="0.36574442969999998" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>

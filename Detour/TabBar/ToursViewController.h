@@ -7,8 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFHTTPRequestOperationManager.h"
+#import "AFURLConnectionOperation.h"
+#import "AFHTTPRequestOperation.h"
 
-@interface ToursViewController : UIViewController <UIGestureRecognizerDelegate>
-@property (retain, nonatomic) IBOutlet UIScrollView *scroll;
+
+@interface ToursViewController : UIViewController <UIGestureRecognizerDelegate,UITableViewDataSource,UITableViewDelegate>
+{
+    NSArray *searchResults;
+    NSArray *tours;
+    int indexRow;
+}
+
+- (IBAction)actionInfo:(id)sender;
+
+@property (strong,nonatomic) NSMutableArray *groupTours;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UIView *mainView;
+@property (strong, nonatomic) IBOutlet UITableViewCell *tableViewCell;
+
 
 @end

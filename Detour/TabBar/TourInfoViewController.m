@@ -10,10 +10,13 @@
 #import "ChallengeViewController.h"
 
 @interface TourInfoViewController ()
+@property (retain, nonatomic) IBOutlet UITableView *listado;
 
 @end
 
-@implementation TourInfoViewController
+@implementation TourInfoViewController{
+        NSMutableArray *products;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,6 +33,8 @@
     [super viewDidLoad];
     NSLog(@"Tour detail %@",_tourDetail.title);
     self.title = _tourDetail.title;
+    self.listado.dataSource = self;
+    self.listado.delegate = self;
     [self loadDataDetail];
     // Do any additional setup after loading the view.
 }
@@ -41,6 +46,8 @@
 }
 
 - (void) loadDataDetail{
+    curl = [[AFHTTPRequestOperationManager alloc] init];
+    products = [[NSMutableArray alloc] init];
     NSLog(@"loading tour %@",_tourDetail.title);
     _labelTitle.text = _tourDetail.title;
     NSString *intString = [NSString stringWithFormat:@"%d", tourDetail.price];
@@ -57,37 +64,39 @@
     
     NSArray *req = [_tourDetail valueForKey:@"requiredItems"];
     NSMutableArray *arrayProducts = [[NSMutableArray alloc]init];
-    //NSLog(@"req %@", req);
     for (int count = 0; count < req.count; count++) {
-        // NSLog(@"Item: %@", [req objectAtIndex:count]);
         [arrayProducts addObject:[req objectAtIndex:count]];
     }
     query = [[NSArray alloc] initWithArray:arrayProducts];
     [self fill];
-    NSLog(@"Listado final: %@", products);
 }
 
 - (void) fill{
-    NSLog(@"Filling");
-    NSLog(@"Query %@",query);
-    NSLog(@"query count %d",query.count);
-    products = [[NSMutableArray alloc]init];
     NSString *consulta = @"http://productapipqa-vip.bcinfra.net:9000/v1/products";
     for (NSString *item in query) {
-        NSLog(@"Item %@",item);
         [curl GET:consulta parameters:@{ @"q": item, @"site": @"bcs", @"limit": @1 }
           success:^(AFHTTPRequestOperation *operation, id responseObject) {
-              NSLog(@"producto: %@, item: %@", responseObject[@"products"][0], item);
               if(responseObject[@"products"][0] != nil){
                   [products addObject:responseObject[@"products"][0]];
-                  //[listado reloadData];
-                  NSLog(@"Listado final: %@", products);
+                  [self.listado reloadData];
               }
           } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
               NSLog(@"Error = %@", error);
           }];
     }
-    NSLog(@"Listado final: %@", products);
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [products count];
+}
+
+- (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"celdas"];
+    if([products count] > 0) {
+        cell.textLabel.text = [products objectAtIndex:indexPath.row][@"title"];
+        cell.detailTextLabel.text = [products objectAtIndex:indexPath.row][@"id"];
+    }
+    return cell;
 }
 
 - (IBAction)buttonFacebook:(id)sender {
@@ -206,4 +215,9 @@
     [self.navigationController pushViewController:challengeView animated:YES];
 }
 
+- (void)dealloc {
+    [_listado release];
+    [_listado release];
+    [super dealloc];
+}
 @end

@@ -33,14 +33,17 @@
     UIViewController *profileViewController = [[ProfileViewController alloc] initWithNibName:@"ProfileViewController" bundle:nil];
     UINavigationController *profileNavControler = [[UINavigationController alloc] initWithRootViewController:profileViewController];
     [profileNavControler.navigationBar setBarTintColor: navColor];
-    
     profileNavControler.navigationBar.titleTextAttributes =  navStyle;
+    
     UIViewController *mapViewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
     UINavigationController *toursNavController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
+    [toursNavController.navigationBar setBarTintColor: navColor];
+    toursNavController.navigationBar.titleTextAttributes =  navStyle;
     
-
     UIViewController *badgesViewController = [[BadgesViewController alloc] initWithNibName:@"BadgesViewController" bundle:nil];
     UINavigationController *badgesNavController = [[UINavigationController alloc] initWithRootViewController:badgesViewController];
+    [badgesNavController.navigationBar setBarTintColor: navColor];
+    badgesNavController.navigationBar.titleTextAttributes =  navStyle;
     
     UIViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     

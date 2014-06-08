@@ -35,7 +35,7 @@
     [self sendRequest];
     CGRect frame = CGRectMake(10, 6, 60, 30);
     UIButton *customButton = [[UIButton alloc] initWithFrame:frame];
-    [customButton setTitle:@"List" forState:UIControlStateNormal];
+    [customButton setTitle:@"" forState:UIControlStateNormal];
     [customButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [customButton addTarget:self action:@selector(pushToursView) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *right = [[UIBarButtonItem alloc] initWithCustomView:customButton];

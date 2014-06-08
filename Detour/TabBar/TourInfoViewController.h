@@ -13,12 +13,10 @@
 #import <Social/Social.h>
 #import <Accounts/Accounts.h>
 
-@interface TourInfoViewController : UIViewController{
+@interface TourInfoViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
     Tour *tourDetail;
     NSArray *query;
     AFHTTPRequestOperationManager *curl;
-    //UITableView *listado;
-    NSMutableArray *products;
 }
 
 //@property (strong) Tour *tourDetail;

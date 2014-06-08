@@ -65,6 +65,7 @@
 		7FA88EE31944CB8E003AD950 /* ListTours.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88EE01944CB8E003AD950 /* ListTours.m */; };
 		7FA88EE41944CB8E003AD950 /* MKCustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88EE11944CB8E003AD950 /* MKCustomAnnotation.m */; };
 		7FA88EE51944CB8E003AD950 /* Tour.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FA88EE21944CB8E003AD950 /* Tour.m */; };
+		7FA88EE71944CF68003AD950 /* map_pinn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA88EE61944CF68003AD950 /* map_pinn.png */; };
 		B59BF94F1669EEF200D624C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59BF94E1669EEF200D624C2 /* UIKit.framework */; };
 		B59BF9511669EEF200D624C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59BF9501669EEF200D624C2 /* Foundation.framework */; };
 		B59BF9531669EEF200D624C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59BF9521669EEF200D624C2 /* CoreGraphics.framework */; };
@@ -173,6 +174,7 @@
 		7FA88EE01944CB8E003AD950 /* ListTours.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ListTours.m; path = TabBar/ListTours.m; sourceTree = "<group>"; };
 		7FA88EE11944CB8E003AD950 /* MKCustomAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MKCustomAnnotation.m; path = TabBar/MKCustomAnnotation.m; sourceTree = "<group>"; };
 		7FA88EE21944CB8E003AD950 /* Tour.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Tour.m; path = TabBar/Tour.m; sourceTree = "<group>"; };
+		7FA88EE61944CF68003AD950 /* map_pinn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pinn.png; sourceTree = "<group>"; };
 		B59BF94A1669EEF200D624C2 /* BCExperience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCExperience.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59BF94E1669EEF200D624C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B59BF9501669EEF200D624C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -415,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				7FA88E911944C801003AD950 /* back_scroll.png */,
+				7FA88EE61944CF68003AD950 /* map_pinn.png */,
 				7FA88E921944C801003AD950 /* book_button.png */,
 				7FA88E931944C801003AD950 /* challenge.png */,
 				7FA88E941944C801003AD950 /* forward_scroll.png */,
@@ -515,6 +518,7 @@
 				B7C2747B1944C13E00884615 /* challenge3.png in Resources */,
 				7FA88E9C1944C801003AD950 /* forward_scroll.png in Resources */,
 				B59BF9591669EEF200D624C2 /* InfoPlist.strings in Resources */,
+				7FA88EE71944CF68003AD950 /* map_pinn.png in Resources */,
 				7FA88E3519448D11003AD950 /* tour3.png in Resources */,
 				7FA88E3719449473003AD950 /* tour4.png in Resources */,
 				7FA88E9F1944C801003AD950 /* share_facebbok.png in Resources */,

@@ -58,6 +58,7 @@
         UIImageView *challenge = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[NSString stringWithFormat:prefix, i+1]]];
         challenge.frame = CGRectMake(i*103+18, 0, 93, 93);
         [self.scrollChallenge addSubview:challenge];
+//        UITapGestureRecognizer *tap = UITap
     }
     self.scrollChallenge.contentSize = CGSizeMake(4*103+18, self.scrollChallenge.bounds.size.height);
     

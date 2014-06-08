@@ -111,7 +111,7 @@
             annotationView.annotation = annotation;
             myLocation.tag = myLocation.tag;
         }
-        annotationView.image = [UIImage imageNamed:@"pin.png"];
+        annotationView.image = [UIImage imageNamed:@"map_pinn.png"];
 
         //UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         //[rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];

@@ -25,9 +25,8 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (void)setSwipe
 {
-    [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeft:)];
     swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
@@ -40,8 +39,30 @@
     [self.view addGestureRecognizer:swipeRight];
     swipeRight.delegate = self;
     [swipeRight release];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    
+    
+    [self setSwipe];
+    
+    
     // Do any additional setup after loading the view from its nib.
 }
+
+
+
+
+
+
+
+
+
+
+
 
 -(void) swipeRight:(UISwipeGestureRecognizer *) recognizer {
     if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
